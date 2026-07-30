@@ -1,7 +1,7 @@
 """
 app.py
 
-AI DevSecOps Agent entry point.
+DevSecOps Agent entry point.
 
 Responsibilities:
 - Accept target repository
