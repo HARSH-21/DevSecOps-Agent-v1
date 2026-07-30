@@ -52,7 +52,7 @@ class ReportGenerator:
         print()
 
         print("=" * 70)
-        print("AI DevSecOps Security Assessment Report")
+        print("DevSecOps Security Assessment Report")
         print("=" * 70)
 
         print()
