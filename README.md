@@ -1,7 +1,7 @@
 # DevSecOps-Agent-V1
 A modular DevSecOps security pipeline designed for automated code and dependency security analysis with support for multi-tool orchestration, finding normalization, risk assessment, compliance mapping, and future AI-powered vulnerability management.
 
-# AI DevSecOps Security Pipeline
+# DevSecOps Security Pipeline
 
 <p align="center">
 
@@ -117,46 +117,7 @@ The following tools must be installed and available in your system PATH.
 ---
 
 # Project Architecture
-
-```
-                     Target Repository
-                             │
-                             ▼
-                     Security Orchestrator
-                             │
-                 Execution Planner
-                             │
-                 Executor Manager
-                             │
-     ┌────────────┬────────────┬────────────┬────────────┐
-     ▼            ▼            ▼            ▼
- Semgrep      Dependency      Trivy      Gitleaks
-               Security
-        (OSV + Syft + Grype)
-     │            │            │            │
-     └────────────┴────────────┴────────────┘
-                     Raw Findings
-                            │
-                            ▼
-                  Finding Aggregator
-                            │
-    ┌──────────────────────────────────────────┐
-    │ Normalize Findings                       │
-    │ Generate Fingerprints                    │
-    │ Remove Duplicate Findings                │
-    │ Correlate Vulnerabilities                │
-    │ Add Remediation Guidance                 │
-    │ Calculate Risk Scores                    │
-    │ Map Compliance Standards                 │
-    └──────────────────────────────────────────┘
-                            │
-                            ▼
-                   Report Generator
-                            │
-      ┌────────┬────────┬────────┬─────────┐
-      ▼        ▼        ▼        ▼
-    HTML      PDF     JSON     SARIF
-```
+![Architecture](docs/images/architecture.png)
 
 ---
 
@@ -267,41 +228,7 @@ Pipeline execution:
 
 # Finding Processing Pipeline
 
-```
-Raw Findings
-
-↓
-
-Normalization
-
-↓
-
-Fingerprint Generation
-
-↓
-
-Duplicate Removal
-
-↓
-
-Correlation
-
-↓
-
-Risk Score Calculation
-
-↓
-
-Compliance Mapping
-
-↓
-
-Remediation
-
-↓
-
-Report Generation
-```
+![Finding Pipeline](docs/images/pipeline.png)
 
 ---
 
@@ -314,6 +241,7 @@ reports/
 
 security-report.html
 
+
 security-report.pdf
 
 security-report.csv
@@ -322,6 +250,13 @@ security-report.json
 
 security-report.sarif
 ```
+## HTML Report
+
+![HTML Report](docs/images/html_report.png)
+
+## PDF Report
+
+![PDF Report](docs/images/pdf_report.png)
 
 ---
 
