@@ -375,42 +375,6 @@ Completed Successfully
 
 ---
 
-# Sample Report
-
-You can add screenshots inside:
-
-```
-docs/images/
-```
-
-Example:
-
-```
-README Images
-
-├── dashboard.png
-
-├── html-report.png
-
-├── pdf-report.png
-
-└── architecture.png
-```
-
-Then reference them:
-
-```markdown
-## HTML Report
-
-![HTML Report](docs/images/html-report.png)
-
-## PDF Report
-
-![PDF Report](docs/images/pdf-report.png)
-```
-
----
-
 # CI/CD Integration
 
 The pipeline is designed for easy integration with:
@@ -499,7 +463,13 @@ Licensed under the MIT License.
 
 This project is powered by the open-source security community.
 
-* Semgrep  * OSV Scanner  * Syft   * Grype  * Trivy  * Gitleaks  * Python
+* Semgrep
+* OSV Scanner
+* Syft
+* Grype
+* Trivy
+* Gitleaks
+* Python
 
 ---
 
